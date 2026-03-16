@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Market Command Centre</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="topbar-left">
+        <h1>My Market Command Centre</h1>
+        <p class="subtitle">Daily Swing & Momentum Dashboard</p>
+      </div>
+      <div class="topbar-right">
+        <span id="last-updated">Last updated: —</span>
+      </div>
+    </header>
+
+    <main class="layout">
+      <!-- 左側：Macro + Equities -->
+      <section class="column column-main">
+        <!-- Macro Overview -->
+        <section class="panel">
+          <div class="panel-header">
+            <h2>Macro Overview</h2>
+          </div>
+          <div class="panel-body">
+            <div id="macro-table" class="table-container">
+              <!-- JS 會把資料插進來 -->
+              <p class="placeholder">Loading macro data…</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Equities Overview -->
+        <section class="panel">
+          <div class="panel-header">
+            <h2>Equities Overview</h2>
+          </div>
+          <div class="panel-body">
+            <div id="equities-table" class="table-container">
+              <p class="placeholder">Loading equities data…</p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- 右側：Breadth / Sentiment + Position Sizing -->
+      <section class="column column-side">
+        <!-- Breadth & Sentiment -->
+        <section class="panel">
+          <div class="panel-header">
+            <h2>Market Breadth & Sentiment</h2>
+          </div>
+          <div class="panel-body">
+            <div id="breadth-content">
+              <p class="placeholder">
+                Placeholder for breadth/sentiment charts or images
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Position Sizing Calculator -->
+        <section class="panel">
+          <div class="panel-header">
+            <h2>Position Sizing Calculator</h2>
+          </div>
+          <div class="panel-body">
+            <form id="position-form" class="position-form">
+              <div class="form-row">
+                <label for="accountSize">Account size</label>
+                <input type="number" id="accountSize" placeholder="e.g. 100000" />
+              </div>
+              <div class="form-row">
+                <label for="riskPercent">Risk per trade (%)</label>
+                <input type="number" id="riskPercent" placeholder="e.g. 1" step="0.1" />
+              </div>
+              <div class="form-row">
+                <label for="entryPrice">Entry price</label>
+                <input type="number" id="entryPrice" placeholder="e.g. 100" step="0.01" />
+              </div>
+              <div class="form-row">
+                <label for="stopPrice">Stop loss price</label>
+                <input type="number" id="stopPrice" placeholder="e.g. 95" step="0.01" />
+              </div>
+              <button type="button" id="calcButton">Calculate</button>
+            </form>
+
+            <div id="position-result" class="position-result">
+              <!-- JS 計算後顯示結果 -->
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Built for my own process · Auto-updated daily via GitHub Actions + yfinance</span>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
