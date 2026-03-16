@@ -2,6 +2,7 @@
   "columns": ["Ticker", "Name", "Last", "1D%", "1W%", "YTD%"],
   "rows": [
     { "Ticker": "SPY", "Name": "S&P 500 ETF", "Last": 520.12, "1D%": "0.5%", "1W%": "1.2%", "YTD%": "6.7%" },
-    { "Ticker": "QQQ", "Name": "Nasdaq 100 ETF", "Last": 446.30, "1D%": "0.8%", "1W%": "2.4%", "YTD%": "8.9%" }
+    { "Ticker": "QQQ", "Name": "Nasdaq 100 ETF", "Last": 446.30, "1D%": "0.8%", "1W%": "2.4%", "YTD%": "8.9%" },
+    { "Ticker": "IWM", "Name": "Russell 2000 ETF", "Last": 204.55, "1D%": "-0.3%", "1W%": "0.4%", "YTD%": "2.1%" }
   ]
 }

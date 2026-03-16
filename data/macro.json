@@ -1,0 +1,10 @@
+{
+  "columns": ["Ticker", "Last", "1W%"],
+  "rows": [
+    { "Ticker": "ES=F", "Last": 5100.25, "1W%": "1.2%" },
+    { "Ticker": "NQ=F", "Last": 17880.40, "1W%": "2.1%" },
+    { "Ticker": "CL=F", "Last": 78.35, "1W%": "-0.8%" },
+    { "Ticker": "GC=F", "Last": 2165.10, "1W%": "0.9%" },
+    { "Ticker": "^VIX", "Last": 15.72, "1W%": "-4.5%" }
+  ]
+}
